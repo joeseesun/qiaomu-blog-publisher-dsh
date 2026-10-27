@@ -1,0 +1,43 @@
+/* Host tokens and primitives only. Product CSS is copied unchanged from upstream. */
+:where(.qblog-dsh-surface button){display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:28px;padding:5px 10px;border:1px solid var(--background-modifier-border);border-radius:5px;background:var(--background-secondary);color:var(--text-normal);font:inherit;cursor:pointer}
+:where(.qblog-dsh-surface button:disabled){opacity:.5;cursor:default}
+:where(.qblog-dsh-surface button.mod-cta){background:var(--interactive-accent,#7555d9);color:var(--text-on-accent,#fff);border-color:transparent}
+:where(.qblog-dsh-surface input,.qblog-dsh-surface textarea,.qblog-dsh-surface select){font:inherit;color:var(--text-normal);background:var(--background-primary);border:1px solid var(--background-modifier-border);border-radius:5px;padding:5px 8px}
+:where(.qblog-dsh-surface [hidden]){display:none!important}
+.qblog-dsh-surface{
+ --text-normal:var(--dsw-alias-label-primary,#262626);--text-muted:var(--dsw-alias-label-secondary,#777);--text-faint:var(--dsw-alias-label-tertiary,#999);
+ --background-primary:var(--dsw-alias-bg-base,#fff);--background-secondary:var(--dsw-alias-bg-layer-1,#f6f6f6);--background-modifier-border:var(--dsw-alias-border-main,#e4e4e4);--background-modifier-hover:var(--dsw-alias-interactive-bg-hover,#f4f4f4);
+ --font-interface:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-text:var(--font-interface);--font-monospace:ui-monospace,monospace;
+ color:var(--text-normal);font-family:var(--font-interface);font-size:14px;line-height:1.5;
+}
+.qblog-dsh-host,.qblog-dsh-view{height:100%;min-height:0;overflow:hidden;background:var(--background-primary)}
+.qblog-dsh-surface *{box-sizing:border-box}
+.qblog-dsh-surface input,.qblog-dsh-surface textarea,.qblog-dsh-surface select,.qblog-dsh-surface button{font-family:inherit}
+.qblog-dsh-surface img{max-width:100%}
+.qblog-dsh-row{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.qblog-dsh-language{background:transparent;border:0;color:var(--text-muted);font-size:12px;max-width:60px}
+.qblog-dsh-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.45);padding:16px}
+.qblog-dsh-overlay .modal{position:relative;max-width:calc(100vw - 32px);max-height:calc(100vh - 32px);background:var(--background-primary);color:var(--text-normal);border-radius:14px;outline:none;box-shadow:0 24px 80px #0003}
+.qblog-dsh-overlay .modal-content{min-height:0;min-width:0}
+.qblog-dsh-overlay .modal-close-button{position:absolute;right:12px;top:12px;z-index:10;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;color:var(--text-muted);border:0;border-radius:6px;background:transparent;cursor:pointer}
+.qblog-dsh-overlay .modal-close-button:hover{background:var(--background-modifier-hover)}
+.qblog-dsh-toast{position:fixed;z-index:1200;right:24px;bottom:24px;max-width:min(480px,90vw);padding:12px 18px;background:#282828;color:#fff;border-radius:10px;box-shadow:0 4px 24px #0002;font:14px/1.5 -apple-system,sans-serif}
+.qblog-dsh-menu{position:fixed;z-index:1100;min-width:180px;max-width:360px;padding:5px;background:var(--background-primary);border:1px solid var(--background-modifier-border);border-radius:10px;box-shadow:0 8px 32px #0002}
+.qblog-dsh-menu-item{display:flex;width:100%;align-items:center;gap:9px;padding:8px 10px;background:none;border:0;border-radius:6px;color:var(--text-normal);text-align:left;font-size:13px;cursor:pointer}
+.qblog-dsh-menu-item:hover,.qblog-dsh-menu-item:focus{background:var(--background-modifier-hover);outline:none}
+.qblog-dsh-menu-item>span:first-child{width:16px;height:16px;display:flex}.qblog-dsh-menu hr{border:0;border-top:1px solid var(--background-modifier-border);margin:4px}
+.qblog-dsh-surface .setting-item{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--background-modifier-border)}
+.qblog-dsh-surface .setting-item-info{flex:1;min-width:0}.qblog-dsh-surface .setting-item-name{font-size:14px;font-weight:500}.qblog-dsh-surface .setting-item-description{font-size:12px;color:var(--text-muted);margin-top:4px}.qblog-dsh-surface .setting-item-control{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:55%}
+.qblog-dsh-surface .setting-item-control :is(input,select,button){border:1px solid var(--background-modifier-border);border-radius:6px;background:var(--background-primary);color:var(--text-normal);padding:6px 10px;max-width:100%;font-size:13px}.qblog-dsh-surface .setting-item-control button{cursor:pointer;display:flex;align-items:center;gap:6px}.qblog-dsh-surface .setting-item-control input[type=checkbox]{width:18px;height:18px;accent-color:var(--text-normal)}
+.qblog-dsh-files{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.qblog-dsh-surface .qblog-dsh-editor{min-height:300px}.qblog-dsh-error{padding:12px;color:#b91c1c}
+@media(max-width:760px){.qblog-dsh-row{gap:3px}.qblog-dsh-language{max-width:48px}.qblog-dsh-surface .setting-item{align-items:flex-start;flex-direction:column}.qblog-dsh-surface .setting-item-control{max-width:100%}}
+/* Replaces only the missing host workspace/editor shell. Product selectors stay upstream. */
+.qblog-dsh-workspace{display:flex;flex-direction:column;height:100%;min-height:0;overflow:hidden;background:var(--background-primary);--interactive-accent:var(--dsw-alias-brand-primary,#7555d9);--text-on-accent:#fff;--interactive-normal:var(--background-secondary);--interactive-hover:var(--background-modifier-hover);--input-height:30px;--radius-s:4px;--radius-m:8px;--font-ui-small:13px;--font-ui-smaller:12px;--font-ui-medium:14px;--text-accent:var(--interactive-accent)}
+.qblog-dsh-filebar{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid var(--background-modifier-border);flex-shrink:0;flex-wrap:wrap}.qblog-dsh-filebar>input{flex:1;min-width:140px}.qblog-dsh-filebar :is(input,select,button){border:1px solid var(--background-modifier-border);background:var(--background-primary);color:var(--text-normal);border-radius:5px;padding:5px 8px;font-size:12px}.qblog-dsh-filebar>select{max-width:200px}.qblog-dsh-filebar button{cursor:pointer}
+.qblog-dsh-panes{display:grid;grid-template-columns:minmax(220px,1fr) minmax(320px,1fr);flex:1;min-height:0;overflow:hidden}.qblog-dsh-source{min-width:0;min-height:0;border-right:1px solid var(--background-modifier-border)}.qblog-dsh-source .cm-editor{height:100%;font-size:15px}.qblog-dsh-source .cm-scroller{overflow:auto;font-family:var(--font-monospace)}.qblog-dsh-source .cm-content{padding:20px 12px}.qblog-dsh-source .cm-gutters{background:var(--background-secondary);color:var(--text-faint);border:0}.qblog-dsh-source .cm-focused{outline:none}.qblog-dsh-source .cm-cursor{border-left-color:var(--text-normal)}.qblog-dsh-preview{min-width:0;min-height:0;overflow:hidden}.qblog-dsh-file-status{font-size:11px;color:var(--text-muted);padding:3px 12px;flex-shrink:0}
+.qblog-dsh-settings-modal{width:900px;display:flex;flex-direction:column}.qblog-dsh-settings-modal>.modal-content{overflow:auto;padding:24px}.qblog-dsh-overlay .modal{display:flex;flex-direction:column}.qblog-dsh-overlay .modal-title{padding:20px 40px 12px 24px;font-size:18px;font-weight:600;flex-shrink:0}.qblog-dsh-overlay .modal-content{overflow:auto}.qblog-dsh-surface .setting-item-heading{border:0}.qblog-dsh-surface .setting-item-heading .setting-item-name{font-weight:600;font-size:16px}
+@media(max-width:700px){.qblog-dsh-panes{grid-template-columns:1fr;grid-template-rows:minmax(160px,40%) minmax(240px,60%)}.qblog-dsh-source{border-right:0;border-bottom:1px solid var(--background-modifier-border)}.qblog-dsh-filebar>select{max-width:140px}}
+
+.qblog-dsh-workspace>.qblog-dsh-source{flex:1;overflow:hidden}.qblog-dsh-overlay .qmblog-publish-modal>.modal-content{padding:24px}.qblog-dsh-settings-modal .modal-content{padding:24px}.qblog-dsh-surface h2{font-size:18px;margin:16px 0}.qblog-dsh-surface h1{font-size:22px;margin:8px 0}.qblog-dsh-surface p{line-height:1.6}
+.qblog-dsh-surface{--interactive-accent:var(--dsw-alias-brand-primary,#7555d9);--text-on-accent:#fff;--font-ui-small:13px;--font-ui-smaller:12px;--font-ui-medium:16px;--color-green:#16865a;--color-red:#c33}
+.qblog-dsh-surface .setting-item-control button.mod-cta{background:var(--interactive-accent);color:var(--text-on-accent);border-color:transparent}
