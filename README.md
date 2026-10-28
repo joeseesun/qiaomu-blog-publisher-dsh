@@ -1,5 +1,7 @@
 # 乔木博客发布 · DeepSeek Harness
 
+> v0.1.1：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+
 [English](README.en.md)
 
 把 Markdown 笔记发布到自己的 Qiaomu Blog。直接使用原 Obsidian 插件的发布弹窗、分类与设置页，保留本地图片、音频、视频和远程图片转存流程。
@@ -16,12 +18,12 @@
 
 ## 安装
 
-要求 DeepSeek Harness `0.2.1-rc.3`（`<0.3.0`），Node.js 22 或更新。
+要求 DeepSeek Harness `0.2.1-rc.3`，Node.js 22 或更新。
 
 从 [Releases](https://github.com/joeseesun/qiaomu-blog-publisher-dsh/releases) 下载 tgz 和 SHA256SUMS，校验后在插件管理安装，或运行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.0.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.1.tgz
 ```
 
 侧栏打开「乔木博客发布」，导入 Markdown，在设置里填写自己的博客地址和 API Token，点击「发布到博客」。默认创建草稿；选择「直接发布」会公开文章。
