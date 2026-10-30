@@ -1,6 +1,6 @@
 # 乔木博客发布 · DeepSeek Harness
 
-> v0.1.1：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+> v0.1.2：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
 
 [English](README.en.md)
 
@@ -23,7 +23,7 @@
 从 [Releases](https://github.com/joeseesun/qiaomu-blog-publisher-dsh/releases) 下载 tgz 和 SHA256SUMS，校验后在插件管理安装，或运行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.1.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.2.tgz
 ```
 
 侧栏打开「乔木博客发布」，导入 Markdown，在设置里填写自己的博客地址和 API Token，点击「发布到博客」。默认创建草稿；选择「直接发布」会公开文章。

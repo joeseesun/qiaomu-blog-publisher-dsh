@@ -1,6 +1,6 @@
 # Qiaomu Blog Publisher for DeepSeek Harness
 
-> v0.1.1: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
+> v0.1.2: DeepSeek Harness **0.2.1-rc.3** compatibility update. [Release verification](docs/RC3-COMPATIBILITY.md).
 
 [中文](README.md)
 
@@ -13,7 +13,7 @@ Publish Markdown to your own Qiaomu Blog using the original publisher dialog and
 Requires Harness `0.2.1-rc.3` (`<0.3.0`) and Node.js 22+. Download the tgz and SHA256SUMS from [Releases](https://github.com/joeseesun/qiaomu-blog-publisher-dsh/releases), verify the checksum, then install in plugin management or run:
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.1.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.2.tgz
 ```
 
 Open Qiaomu Blog Publisher, import Markdown, enter your blog URL and API token in Settings, and open the publishing dialog. Draft is the default; choosing Published makes the article public. Title priority is frontmatter, first H1, then filename. The original category, progress, success, retry and browser editing controls are retained.
