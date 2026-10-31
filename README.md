@@ -47,3 +47,5 @@ npm pack
 ```
 
 MIT。原版冻结来源 `5d41358f707320c2f56016bf62327eb60d8668b8`，来源及打包依赖见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。
+
+本次 Harness rc.5 支持范围与实测边界见 [兼容验证记录](docs/RC5-COMPATIBILITY.md)。

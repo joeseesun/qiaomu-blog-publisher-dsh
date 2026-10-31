@@ -37,3 +37,5 @@ npm pack
 ```
 
 MIT. Original source frozen at `5d41358f707320c2f56016bf62327eb60d8668b8`; actual bundled licenses are listed in [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md).
+
+See the [Harness rc.5 compatibility record](docs/RC5-COMPATIBILITY.md) for tested paths and limitations.
