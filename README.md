@@ -1,6 +1,6 @@
 # 乔木博客发布 · DeepSeek Harness
 
-> v0.1.2：DeepSeek Harness **0.2.1-rc.3** 兼容更新。[本次验证范围](docs/RC3-COMPATIBILITY.md)。
+> v0.1.3：DeepSeek Harness **0.2.2-rc.1** 兼容更新。[本次验证范围](docs/DSH-0.2.2-RC1.md)。
 
 [English](README.en.md)
 
@@ -18,12 +18,12 @@
 
 ## 安装
 
-要求 DeepSeek Harness `0.2.1-rc.3`，Node.js 22 或更新。
+要求 DeepSeek Harness `0.2.2-rc.1`，Node.js 24.9 或更新。
 
 从 [Releases](https://github.com/joeseesun/qiaomu-blog-publisher-dsh/releases) 下载 tgz 和 SHA256SUMS，校验后在插件管理安装，或运行：
 
 ```sh
-dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.2.tgz
+dsh plugin --profile desktop add /absolute/path/qiaomu-blog-publisher-dsh-0.1.3.tgz
 ```
 
 侧栏打开「乔木博客发布」，导入 Markdown，在设置里填写自己的博客地址和 API Token，点击「发布到博客」。默认创建草稿；选择「直接发布」会公开文章。
@@ -48,4 +48,4 @@ npm pack
 
 MIT。原版冻结来源 `5d41358f707320c2f56016bf62327eb60d8668b8`，来源及打包依赖见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。
 
-本次 Harness rc.5 支持范围与实测边界见 [兼容验证记录](docs/RC5-COMPATIBILITY.md)。
+Harness 0.2.2-rc.1 适配与实测边界见 [兼容验证记录](docs/DSH-0.2.2-RC1.md)。
